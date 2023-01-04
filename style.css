@@ -28,27 +28,38 @@
     text-align: center;
     padding: 10px 15px;
 }
-.container .top-right ul li:nth-child(5), .container .top-right ul li:nth-child(6){
+.container .top-right ul li:nth-child(5){
     border-left: 1px solid rgb(0 0 0 /60%) ;
+}
+.container .top-right ul li:nth-child(5), .container .top-right ul li:nth-child(6){
     transform: translateY(-10px);
 } 
 .container .top-right ul li:nth-child(5) a{
     color: rgb(0 0 0 / 75%);
-    font-weight: bold;
-    padding: 20px 20px;
+    
+    font-size: 18px;
+    font-weight: 510;
+    padding: 15px 20px;
 }
 .container .top-right ul li:nth-child(5) a:hover{
     background-color: #F5F5F5;
-    border-radius: 45%;
+    line-height: 20px;
+    border-radius: 30px;
 }
 .container .top-right ul li:nth-child(6){
     border: 1px solid #32679C;
-    border-radius: 45%;
-    padding: 15px 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 30px;
 }
 .container .top-right ul li:nth-child(6) a{
-    color: #004182;
-    font-weight: bold;
+    color: #0A66C2;
+    font-weight: 600;
+}
+.container .top-right ul li:nth-child(6) a:hover{
+    color: #0A66C2;
 }
 .container .top-right ul li:nth-child(6):hover{
     background-color:#CEDEED;
@@ -143,7 +154,7 @@
 
 
 .explore{
-    background-color: #f3f2f0;
+    background-color: #F3F2F0;
     padding: 60px 0;
 }
 .explore .exp-left{
@@ -175,7 +186,7 @@
     margin: 5px;
 }
 .explore .exp-right .content-list a:hover{
-    background-color: #F5F5F5;
+    background-color: #EAE9E7;
 }
 .explore .exp-right a:first-child{
     color: #0a66c2;
@@ -220,10 +231,10 @@
     font-weight: 400;
     color: #b24020;
 }
-.postjob .post-right{
+.postjob .post-right {
     width: 50%;
-    float: right;
-    margin-top: 70px;
+    float: left;
+    transform: translateY(70px);
 }
 .postjob .post-right a{
     color: #0a66c2;
@@ -243,7 +254,6 @@
 
 .peopleknow{
     padding: 60px 0;
-    min-height: 840px;
     background-color: #F3F2F0;
 
     position: relative;
@@ -280,7 +290,7 @@
     padding: 60px 0;
 }
 .connet-learn img{
-    max-width: 80%;
+    max-width: 60%;
 }
 .connet-learn .connet{
     width: 50%;
@@ -304,6 +314,9 @@
     color: #000000;
     margin: 5px;
 }
+.connet-learn .connet a:hover{
+    background-color: #F5F5F5;
+}
 .connet-learn .learn{
     width: 50%;
     float: right;
@@ -321,8 +334,11 @@
     text-decoration: none;
     font-size: 20px;
     color: #000000;
-    background-color: #f3f2f0;
+    border: 1px solid rgba(0, 0, 0, 0.16);
     border-radius: 5px;
+}
+.connet-learn .learn a:hover{
+    background-color: #f3f2f0;
 }
 
 
@@ -362,7 +378,7 @@
 }
 .footer-top .fcolam h5{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .footer-top .fcolam .frow a{
@@ -375,6 +391,171 @@
 .footer-top .fcolam .frow a:hover{
     text-decoration: underline;
     color: blue;
+}
+
+
+.footer-botoom{
+    padding: 10px 0;
+}
+.footer-botoom .flinks svg{
+    width: 60px;
+}
+
+.footer-botoom .flinks a, .footer-botoom .flinks p{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+}
+.footer-botoom .flinks a:hover{
+    text-decoration: underline;
+    color: #0a66c2;
+}
+.footer-botoom .fbtmphnview{
+    display: none;
+}
+
+
+
+/* media query */
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .container .top-right ul li{
+        display: none;
+        text-align: right;
+        padding: 0;
+    }
+    .container .top-right ul li:nth-child(5){
+        border-left: none;
+        
+    }
+    .container .top-right ul li:nth-child(5), .container .top-right ul li:nth-child(6){
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .explore .exp-left, .explore .exp-right{
+        width: 100%;
+        float: none;
+    }
+
+    .peopleknow .pknow-right img{
+        max-width: 80%;
+    }
+
+    .postjob .post-right {
+        width: 40%;
+        float: left;
+        transform: translateY(90px);
+        margin-left: 40px;
+    }
+    .connet-learn .connet {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .connet-learn .learn {
+        width: 100%;
+        transform: translateY(50px);
+        text-align: center;
+    }
+
+    .footer-top .fcolam {
+        width: 16%;
+        float: left;
+        padding: 5px;
+    }
+    
+    .footer-botoom .fbtmdeskview{
+        display: none;
+    }
+    .footer-botoom .fbtmphnview{
+        display: block;
+    }
+    
+    .fbtmphnview .left-colum, .fbtmphnview .right-colum{
+        width: 50%;
+        float: left;
+    }
+    .fbtmphnview .left-colum a, .fbtmphnview .right-colum a{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        width: 90%;
+    }
+    .container .top-left{
+        width: 30%;
+    }
+    .container .top-left img{
+        max-width: 100%;
+        transform: translatey(10px);
+    }
+    .container .top-right{
+        width: 70%;
+    }
+    .container .top-right ul li:nth-child(5) a, .container .top-right ul li:nth-child(6) a{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .header-area .top-left, .header-area .top-right{
+        width: 100%;
+    }
+    .header-area h1{
+        font-size: 24px;
+    }
+    .header-area .top-right img {
+        width: 90%;
+    }
+    .header-area input[type="text"], .header-area input[type="password"]{
+        max-width: 320px;
+    }
+      
+    .explore .exp-left h2 {
+        font-size: 36px;
+        
+        
+    }
+
+    .postjob .post-left, .postjob .post-right{
+        width: 100;
+        transform: translateY(0px);
+    }
+    .postjob .post-left h2 {
+        font-size: 28px;
+    }
+    .postjob .post-right a {
+        font-size: 18px;
+    }
+    .peopleknow .pknow-left, .peopleknow .pknow-right{
+        width: 100%;
+    }
+    .peopleknow .pknow-left h2 {
+        font-size: 28px;
+    }
+    .peopleknow .pknow-left h3 {
+        font-size: 18px;
+    }
+    .connet-learn .connet h2, .connet-learn .learn h2 {
+        font-size: 34px;
+    }
+
+    .jion-clg h2 {
+        font-size: 36px;
+    }
+
+    .footer-top .fcolam{
+        width: 100%;
+        text-align: center;
+    }
+
+    
 }
 
 
